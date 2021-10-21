@@ -236,10 +236,3 @@ function parseCookies(str = '') {
     str.split('; ').forEach(cookie => map.set(...cookie.split('=')));
     return map;
 };
-
-window.onload = function() {
-    var titles = ['Google', 'Google (404)', 'Classroom', 'Google Search];
-    var random = Math.floor(Math.random() * titles.length);
-    var titleElement = document.getElementById('title')
-    titleElement.innerHTML = titles[random];
-}
